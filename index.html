@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Resources Hub</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1a1033 0%, #2d1b4e 100%);
+            min-height: 100vh;
+            color: white;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .subscribe-btn {
+            background: #ff4141;
+            transition: all 0.3s ease;
+        }
+        .subscribe-btn:hover {
+            background: #ff2525;
+            transform: translateY(-2px);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto px-4 py-8">
+        <!-- Navigation -->
+        <nav class="flex justify-between items-center mb-12">
+            <div class="logo">
+                Keshan
+            </div>
+            <div class="flex gap-8 items-center">
+                <a href="#about" class="text-white hover:text-gray-300">About</a>
+                <a href="https://www.youtube.com/@ceszn11" 
+                   class="subscribe-btn px-6 py-2 rounded-full text-white font-medium"
+                   target="_blank">
+                    Subscribe
+                </a>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="card p-8 md:p-12">
+            <h1 class="text-4xl font-bold mb-6">
+                Welcome to Your Creative Hub
+            </h1>
+            <p class="text-lg text-gray-200 mb-6">
+                This platform is dedicated to creators and editors looking for top-notch resources 
+                to enhance their projects. Here, you'll find a growing collection of sound effects, 
+                memes, backgrounds, and background music—all curated to elevate your creative work.
+            </p>
+            <p class="text-lg text-gray-200 mb-6">
+                Feel free to explore, download, and get inspired. Your support means the world to me, 
+                and I hope these resources help you create something amazing.
+            </p>
+            <div class="flex items-center gap-2 mb-8">
+                <span role="img" aria-label="video">🎬</span>
+                <span role="img" aria-label="music">🎵</span>
+                <span role="img" aria-label="sparkle">✨</span>
+            </div>
+            <div class="rounded-xl overflow-hidden">
+                <img src="/api/placeholder/800/400" 
+                     alt="Video editing interface" 
+                     class="w-full h-full object-cover" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
